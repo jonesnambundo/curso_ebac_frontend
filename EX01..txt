@@ -1,9 +1,0 @@
-Qual é a importância do HTML, CSS e Javascript na construção de páginas Web?
-Respostas: O HML vai ser importante para podermos organizar e gerir o conteúdo que vamos utilizar na nossa página.
-
-O Css vai permitir organizar e darmos o efeito necessário para apresentação, tornando o nosso conteúdo mais apresentável 
-e com diferentes estilos, desde imagens, links posições cores de fundo e várias outras opções que ele permite.
-No entanto o Css precisa do HTML para funcionar.
-
-O Javascript vai permite que esta página torne -se mais dinâmica e interativa para usuário final.
-
