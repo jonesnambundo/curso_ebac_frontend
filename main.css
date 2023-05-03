@@ -4,119 +4,139 @@
     padding:0;
 }
 
-body > header {
-    background: #2f3640;
-    padding: 16px 0;
-    color:#f5f6fa;
+header, 
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
 }
 
-header .container {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
 }
-header li a {
-    color: #f5f6fa;  
+
+header {
+    padding: 16px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+
+header nav li {
+    display: inline;
+    align-self: 16px;
+    color: #ecf0f1;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ecf0f1;
     text-decoration: none;
 }
-
-header li {
-    display: inline;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-left: 16px;
-}
-
 .container {
-    width: 1366px;
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
 }
 
-.articles {
-    display:flex;
-    flex-wrap: wrap;
+header .container, section .container {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.articles article img {
-    /* height: 180px; */
-    width: 100%;
+.brands-list img {
+    height: 24px;
 }
 
-.articles article {
-    width: 30%;
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container {
+    align-items: flex-start;
 }
 
 section {
-    padding: 16px 0;
-}
-section h2, .articles article {
-    margin-bottom: 16px;
-}
-
-.articles article h3 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.articles article a {
-    background-color: blue;
-    color: #fff;
-    padding: 8px;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 8px;
-}
-.articles article a:hover {
-    text-decoration: underline;
-}
-
-.articles article p, .articles article a {
-    font-family: Arial, Helvetica, sans-serif;
-}
-.articles article h3 {
-    font-size: 24px;
+    padding: 24px 0;
 }
 
 section h2 {
-    font-size: 32px;
-}
-#sport {
-    background-color:rgba(0, 255, 0, 0.1);
+    margin-bottom: 16px;
 }
 
-#sport .articles article a {
-    background-color: rgba(0, 255, 0, 0.8);
-    color: #000
-}
-
-#sports .articles article a {
-    background-color: #009432;
+section {
+    color:#182c61;
 
 }
 
-#economy {
-    background-color:#f8f59f;
+section p {
+    margin-bottom: 8px;
 }
 
-#economy .articles article a {
-    background-color: #ff9f1a;
+.store-front {
+    margin-right: 32px;
 }
 
-#entertainment {
-    background-color: rgb(169, 207, 169);
+.social-links img {
+    height: 24px;
 }
 
-#entertainment .articles article a {
-    background-color: rgb(52, 66, 61);
+.social-links li {
+    display: inline;
+    margin-right: 8px;
 }
 
-#technology {
-    background-color: rgb(157, 111, 167);
+.social-links li a {
+    text-decoration: none;
 }
 
-#technology .articles article a {
-    background-color: rgb(70, 117, 119);
-    color: #571d1d;
+#contact .container {
+    display: block;
 }
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+} 
+
+form input, 
+form textarea, 
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px ;
+}
+
+sectio h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #182c61;
+    color:#ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2b4486;
+}
+
+input:focus, textarea:focus {
+    outline-color: #182c61;
+}
+
+footer{
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
+
