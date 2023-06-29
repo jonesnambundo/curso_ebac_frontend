@@ -4,97 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Shop - A sua loja de Games</title>
-    <link rel="stylesheet" href="./main.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;1,200&family=Poppins:ital,wght@0,500;0,700;1,600&family=Roboto&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>HTML com JS</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <div class="container ">
-            <h1>Game Shop</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">Sobre a Loja</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="about">
-        <div class="container">
-            <img class="store-front" src="./imagens/loja.jpg" alt="Fachada da loja Games Shop">
-            <div>
-                <h2>Sobre a Loja</h2>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti recusandae placeat illum rerum, quam totam harum voluptatum autem aliquam aperiam! Accusantium quibusdam voluptatibus tempora culpa aliquam doloremque explicabo reiciendis provident?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, totam numquam obcaecati libero voluptate mollitia dolor ex dolorem pariatur consequuntur minus! Totam ratione porro molestias, dolorem hic tenetur delectus quibusdam.
-                </p>
-                <ul class="brands-list">
-                    <li><img src ="./imagens/nintendo.png" alta="Nintendo"></li>
-                    <li><img src ="./imagens/xbox.png" alta="Xbox"></li>
-                    <li><img src ="./imagens/playstation.png" alta="Playstation"></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <div class="contact-methods">
-                <div>
-                    <h3>Fale conosco</h3>
-                    <form>
-                        <input type="text" placeholder="Seu nome"required />
-                        <input type="text" placeholder="Seu e-mail" required/>
-                        <input type="text" placeholder="Seu telefone (opcional)"/>
-                        <textarea placeholder="Sua mensagem"></textarea>
-                        <button type ="submit">Enviar</button>
-                    </form>
-                </div>
-                <div>
-                    <h3>Nos acompanhe</h3>
-                    <ul class="social-links">
-                        <li>
-                            <a hef="#" title="siga-no no Instagram">
-                                <img src="./imagens/instagram.png" alt="logo do Instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a hef="#" title="siga-no no Instagram">
-                                <img src="./imagens/facebook.png" alt="logo do Facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a hef="#" title="Visite nosso canal no Youtube">
-                                <img src="./imagens/youtube.png" alt="logo do Yotube">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Venha até nós</h3>
-                    <p>
-                        Rua Javascript nº 124, vila HTML - São Paulo - SP
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>
-                &copy; Games Shope - Todos os direitos Reservados - 2022
+    <div class="container">
+        <h2>Validação de Formulário</h2>
+            <form id="form-validation">
+                <label for="campoA">Campo A:</label>
+                <input type="number" id="campoA" required placeholder="insira um Número"><br><br>
+                <label for="campoB">Campo B:</label>
+                <input type="number" id="campoB" required placeholder="insira um Número"><br><br>
+
+                <button id="btn-submeter" type="submit">Submeter</button>
+            </form>
+            <p class="mensagem-valida"></p>
+            <p class="mensagem-erro">
+                Insere um número maior que B
             </p>
-        </div>
-    </footer>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
+
